@@ -52,6 +52,6 @@ def check_for_promos_job():
 
 def start_scheduler():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(check_for_promos_job, 'interval', seconds=PROMO_CHECK_INTERVAL, max_instances=1)
+    scheduler.add_job(check_for_promos_job, \'interval\', seconds=PROMO_CHECK_INTERVAL, max_instances=1)
     scheduler.start()
     print("Scheduler started.")
